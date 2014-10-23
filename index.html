@@ -60,8 +60,8 @@
     var nameElement = $("<strong class='example-chat-username'></strong>")
     timeElement.text(timenow);
     nameElement.text(username);
-    messageElement.text(message).append(timeElement);
-    messageElement.text(message).prepend(nameElement);
+    // messageElement.text(message).append(timeElement);
+    messageElement.text(message).prepend(nameElement).append(timeElement);
 
     //ADD MESSAGE
     messageList.append(messageElement)
