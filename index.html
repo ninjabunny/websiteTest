@@ -7,7 +7,7 @@
   <body>
     <div id='messagesDiv'></div>
     <input type='text' id='nameInput' placeholder='Name'>
-    <input type='text' id='messageInput' placeholder='int 0 - 600' style='visibility:hidden'>
+    <input type='number' id='messageInput' placeholder='int 0 - 600' style='visibility:hidden'>
 
     <script>
       var myDataRef = new Firebase('https://glaring-heat-9883.firebaseio.com/');
@@ -19,6 +19,7 @@
           // $('#messageInput').style.display = 'block';
           document.getElementById('messageInput').style.visibility = 'visible'
           document.getElementById('nameInput').style.visibility = 'hidden'
+          document.getElementById("messageInput").focus();
         }
       });
 
